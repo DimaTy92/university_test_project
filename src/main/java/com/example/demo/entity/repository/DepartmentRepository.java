@@ -20,7 +20,7 @@ public interface DepartmentRepository extends JpaRepository<Department, Long> {
     Optional<Integer> countLectorsInDepartmentByDegree(@Param("departmentName") String departmentName,
                                                        @Param("degree") Degree degree);
 
-    @Query("SELECT avg(lec.lectorsSalary) FROM Department s join s.lectors lec " +
+    @Query("SELECT avg(lec.lectorSalary) FROM Department s join s.lectors lec " +
             "where s.departmentName = :departmentName")
     Optional<Double> departmentAverageSalary(@Param("departmentName") String departmentName);
 

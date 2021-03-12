@@ -8,8 +8,9 @@ import com.example.demo.service.DepartmentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-@RequiredArgsConstructor
+
 @Component
+@RequiredArgsConstructor
 public class DepartmentController {
 
     private final BracketsValueParser parser;

@@ -7,8 +7,9 @@ import com.example.demo.entity.type.Command;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-@RequiredArgsConstructor
+
 @Component
+@RequiredArgsConstructor
 public class DispatcherCommandImpl implements DispatcherCommand {
     private static final String COMMAND_NOT_FOUND = "Command not found";
 
